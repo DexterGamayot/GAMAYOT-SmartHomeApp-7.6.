@@ -45,7 +45,7 @@ export default function DashboardScreen() {
 
     const sensorCards = [
         { label: 'Temperature', icon: 'thermometer-outline', value: `${sensors.temperature}°C` },
-        { label: 'Humidity', icon: 'water-outline', value: `${sensors.humidity}%` },
+        { label: 'Humidity', icon: 'water-outline', value: sensors.humidity === undefined ? '—' : `${sensors.humidity}%` },
         { label: 'Light', icon: 'sunny-outline', value: `${sensors.lightLevel} lux` },
     ] as const;
 

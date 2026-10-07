@@ -63,7 +63,6 @@ const IoTContext = createContext<IoTContextType | undefined>(undefined);
 
 const initialSensors: SensorData = {
     temperature: 0,
-    humidity: 0,
     lightLevel: 0,
 };
 
